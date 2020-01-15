@@ -1,0 +1,32 @@
+AULA 01
+//Métodos HTTP: Get, Post, Put, Delete
+
+//Tipos de parâmetros:
+
+//Query Params: request.query(filtros, ordenação, paginação...) -get
+//Route Params: request.params (identificar recurso na alteração ou remoção) -post e delete
+//Body: request.body (Dados para criação ou alteração de um registro) e-post e put
+
+//MongoDB (Não-relacional)
+
+const express = require('express');
+const mongoose = require('mongoose');
+
+const app = express();
+
+mongoose.connect('mongodb+srv://JOAOPAULOPMEDEIROS:ilzyvLhHFYKNaJfN@cluster0-zm9th.mongodb.net/test?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+app.use(express.json());
+
+app.put('/users/:id', (request, response) => {
+    console.log(request.body)
+    return response.json({ message: 'Olá, Mundo!'});
+});
+
+app.listen(3333);
+
+
+//index, show, store, update, detroy
