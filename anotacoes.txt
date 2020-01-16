@@ -30,3 +30,23 @@ app.listen(3333);
 
 
 //index, show, store, update, detroy
+
+
+REACT
+toda vez que for trabalhar com HTML dentro do JS, tem de importar o React
+//componente = funcao que retorna algum conteúdo HTML, CSS ou JS
+ou bloco HTML, CSS, JS que não interfere no restante da aplicaçãp
+//propriedade = atributo do html. Informações que um componente pai passa para um filho
+//estado = informacao que o componente manipulará. informação Lida e mantida pelo componente.
+lembrar do conceito chamado imutabilidade. 
+
+
+
+
+
+
+
+
+
+
+
